@@ -66,6 +66,8 @@ my_tuple[1]
 count_tuple = (1, 2, 3, 1, 1, 2)
 
 # Question: How many times does the number 1 appear in count_tuple?
+count_tuple.count(1) # In-built function
+
 mpp={}
 for c in count_tuple:
     mpp[c] = mpp.get(c,0) + 1 #
