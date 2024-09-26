@@ -51,7 +51,7 @@ Syntax :
 -v : Volume Mounting
 Vount container to local disk to avoid losing data when container is deleted.
 
--- **Port Mapping**'
+-- **Port Mapping**
 Port allows to connect a container's internal ports to the host system's ports.
 
 Multiple Port Mappings:
