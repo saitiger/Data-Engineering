@@ -1,0 +1,2 @@
+- Fact vs Dimensional Modeling
+- When to use fact vs dimensional modeling
