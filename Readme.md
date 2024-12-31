@@ -5,3 +5,5 @@ Learning and Practicing Data Engineeting concepts !
 2) Piyush Garg
 3) Start Data Engineering
 4) Data Expert : Data with Zach 
+5) Ace the Data Science Interview
+6) Trustworthy Online Controlled Experiments
