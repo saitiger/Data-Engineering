@@ -8,6 +8,9 @@ Dashboard Best Practices :
    a. Execs : Should be easy to understand, no to low interactivity
    b. Analysts : More charts, more density, ability to slice and dice
 3. Questions to answer
+
    a. Top-line Questions
+   
    b. Trends
+
    c. Composition
