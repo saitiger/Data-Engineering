@@ -13,3 +13,11 @@ that impact downstream data or can cause big issues. Outliers and weird data are
 
 - *Signal Table*
 Instead of having a staging table in this pattern the pipeline writes to the production table. If all quality checks are passed then the data is written to a signal table else we need to manually troubleshoot the issue. Similar to the WAP pattern non blocking checks are not an issue in Signal table as well.
+
+
+**__Maintaing Trust__**
+1. Quality Checks : Enum, Null checks, Outlier Analysis
+2. Documentation
+3. Clear Expectations : SLA's, Documented gaps
+   Documenting gaps in the pipeline and/or dataset is important as it helps underline the fact that the data collected has
+   some assumptions, collected from where so that in case of failure it is easier to pinpoint and do root cause analysis
