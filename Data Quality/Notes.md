@@ -19,5 +19,6 @@ Instead of having a staging table in this pattern the pipeline writes to the pro
 1. Quality Checks : Enum, Null checks, Outlier Analysis
 2. Documentation
 3. Clear Expectations : SLA's, Documented gaps
+
    Documenting gaps in the pipeline and/or dataset is important as it helps underline the fact that the data collected has
    some assumptions, collected from where so that in case of failure it is easier to pinpoint and do root cause analysis
