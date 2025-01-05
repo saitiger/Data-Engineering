@@ -18,3 +18,11 @@ For smaller migration
 For bigger migration 
 - Build a parallel pipeline that populates table_v2 while production gets migrated
 - After all references to production have been updated, drop production and rename table_v2, all it's references to production
+
+**__Predicate Pushdown__**
+Helps in reducing the I/O cost. This can be achieved by partitioning the data of high cardinality and/or that is frequently 
+queried. While reading and processing the data, only the partition with the matching criteria is accessed.
+
+[Read More](https://docs.datastax.com/en/dse/6.9/spark/predicate-push-down.html)
+
+[Video](https://www.youtube.com/watch?v=k_qdhBjTZgg&ab_channel=waitingforcode) 
