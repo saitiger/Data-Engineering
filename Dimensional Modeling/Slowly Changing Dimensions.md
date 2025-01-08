@@ -10,8 +10,11 @@ Common causes of failure :
 SCD is an attribute that drifts/changes over time Example- age,weight
 
 Type 0 : Value doesn't change example - Birthdate. Is idempotent
+
 Type 1 : Only stores the latest value. Problem arises when backfilling as we lose historical values
+
 Type 2 : Dimension values between START_DATE and END_DATE, boolean IS_CURRENT column to identify the latest/current value
+
 Type 3 : Holds only two values, original and current/latest.
 
 How to decide if to model as SCD??
