@@ -16,6 +16,7 @@ WITH streak_started AS (
     SELECT player_name,
            current_season,
            scoring_class,
+	   -- Used to model any changing in the scoring class
            LAG(scoring_class, 1) OVER
                (PARTITION BY player_name ORDER BY current_season) <> scoring_class
                OR LAG(scoring_class, 1) OVER
@@ -28,6 +29,7 @@ WITH streak_started AS (
             player_name,
                 scoring_class,
                 current_season,
+	    -- Identifies the number of times the scoring class changed for the given player 
             SUM(CASE WHEN did_change THEN 1 ELSE 0 END)
                 OVER (PARTITION BY player_name ORDER BY current_season) as streak_identifier
          FROM streak_started
@@ -41,6 +43,8 @@ WITH streak_started AS (
             MAX(current_season) AS end_date
          FROM streak_identified
          GROUP BY 1,2,3
+	-- Aggregating/ Grouping by streak_identifier helps identify the time period till when the player is in the same 
+	-- state(scoring_class here) and other attributes for the said period
      )
 
      SELECT player_name, scoring_class, start_date, end_date
