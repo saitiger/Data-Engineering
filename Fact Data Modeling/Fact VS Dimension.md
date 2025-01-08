@@ -1,9 +1,13 @@
 - Facts vs Dimensions
 
   1 Dimensions are attributes of an entity {Example favorite feature, address of the user }
+  
   2 Facts are not slowly changing, Dimensions can be either slowly changing or fixed 
+
   3 Facts are usually 10-100 times in volume in comparison to dimensions
+
   4 Facts need a lot of context for effective analysis
+
   5 Duplicates are more common in facts as compared to dimensions
 
 - Normalized vs De-normalized Facts
