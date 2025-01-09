@@ -51,7 +51,7 @@ SELECT
         COALESCE(ls.draft_round, ts.draft_round) as draft_round,
         COALESCE(ls.draft_number, ts.draft_number)
             as draft_number,
-        COALESCE(ls.seasons,
+        COALESCE(ls.season,
             ARRAY[]::season_stats[]
             ) || CASE WHEN ts.season IS NOT NULL THEN
                 ARRAY[ROW(
